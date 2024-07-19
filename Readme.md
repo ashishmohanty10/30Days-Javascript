@@ -8,3 +8,4 @@
 <b>Day 4</b>- was about loops where we did tasks related to for loop,while loop, do-while loop and nested loop to print pattern <br/><br/>
 <b>Day 5</b>- was about function where we implemented various types of function like normal functions,arrow funcitons and higher order funcitons <br/><br/>
 <b>Day 6</b>- was about array and we implemented various array methods like pop,push,filter,etc and manipulate array <br/><br/>
+<b>Day 7</b>- was about obejct, we solved tasks related to methods that can be used on objects
