@@ -10,3 +10,4 @@
 <b>Day 6</b>- was about array and we implemented various array methods like pop,push,filter,etc and manipulate array <br/><br/>
 <b>Day 7</b>- was about obejct, we solved tasks related to methods that can be used on objects <br/><br/>
 <b>Day 8</b>- was about ES6 where we solved various tasks related to ES6 features <br/><br/>
+<b>Day 9</b>- was about DOM Manipulation where we solved various tasks related to DOM <br/><br/>
