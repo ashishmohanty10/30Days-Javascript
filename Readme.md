@@ -11,3 +11,4 @@
 <b>Day 7</b>- was about obejct, we solved tasks related to methods that can be used on objects <br/><br/>
 <b>Day 8</b>- was about ES6 where we solved various tasks related to ES6 features <br/><br/>
 <b>Day 9</b>- was about DOM Manipulation where we solved various tasks related to DOM <br/><br/>
+<b>Day 10</b>- was about Event handling where we solved various tasks related to Event handling <br/><br/>
