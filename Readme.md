@@ -16,3 +16,4 @@
 <b>Day 12</b>- was about Error handling where we solved various tasks related to this topic <br/><br/>
 <b>Day 13</b>- was about Modules where we solved various tasks related to this topic <br/><br/>
 <b>Day 14</b>- was about Classes where we solved various tasks related to this topic <br/><br/>
+<b>Day 14</b>- was about Closures where we solved various tasks related to this topic <br/><br/>
