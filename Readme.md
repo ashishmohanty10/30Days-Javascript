@@ -18,3 +18,4 @@
 <b>Day 14</b>- was about Classes where we solved various tasks related to this topic <br/><br/>
 <b>Day 15</b>- was about Closures where we solved various tasks related to this topic <br/><br/>
 <b>Day 16</b>- was about Recursion where we solved various tasks related to this topic <br/><br/>
+<b>Day 17</b>- was about Data Structures where we solved various tasks related to this topic <br/><br/>
