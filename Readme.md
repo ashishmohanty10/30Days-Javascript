@@ -19,3 +19,4 @@
 <b>Day 15</b>- was about Closures where we solved various tasks related to this topic <br/><br/>
 <b>Day 16</b>- was about Recursion where we solved various tasks related to this topic <br/><br/>
 <b>Day 17</b>- was about Data Structures where we solved various tasks related to this topic <br/><br/>
+<b>Day 18</b>- was about Algorithm where we solved various tasks related to this topic <br/><br/>
