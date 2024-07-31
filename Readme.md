@@ -20,3 +20,4 @@
 <b>Day 16</b>- was about Recursion where we solved various tasks related to this topic <br/><br/>
 <b>Day 17</b>- was about Data Structures where we solved various tasks related to this topic <br/><br/>
 <b>Day 18</b>- was about Algorithm where we solved various tasks related to this topic <br/><br/>
+<b>Day 19</b>- was about Regex where we solved various tasks related to this topic <br/><br/>
