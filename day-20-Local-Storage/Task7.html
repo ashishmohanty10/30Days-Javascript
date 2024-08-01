@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SessionStorage Form Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .form-container {
+        max-width: 400px;
+        margin: auto;
+      }
+      .form-container label {
+        display: block;
+        margin-bottom: 8px;
+      }
+      .form-container input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+      }
+      .form-container button {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      .form-container button:hover {
+        background-color: #0056b3;
+      }
+      .result-container {
+        margin-top: 20px;
+      }
+    </style>
+    <script>
+      function saveFormData(event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+
+        sessionStorage.setItem("userName", name);
+        sessionStorage.setItem("userEmail", email);
+
+        displaySavedData();
+      }
+
+      function displaySavedData() {
+        const name = sessionStorage.getItem("userName");
+        const email = sessionStorage.getItem("userEmail");
+
+        const resultContainer = document.getElementById("result");
+        if (name && email) {
+          resultContainer.innerHTML = `
+                    <h2>Saved User Data</h2>
+                    <p><strong>Name:</strong> ${name}</p>
+                    <p><strong>Email:</strong> ${email}</p>
+                `;
+        } else {
+          resultContainer.innerHTML = "<p>No user data saved.</p>";
+        }
+      }
+
+      window.onload = displaySavedData;
+    </script>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>User Information Form</h1>
+      <form id="userForm" onsubmit="saveFormData(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="result" class="result-container"></div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sessionStorage Example</title>
+    <script>
+      function saveToSessionStorage(key, value) {
+        sessionStorage.setItem(key, value);
+        console.log(`Saved '${value}' to sessionStorage with key '${key}'.`);
+      }
+
+      function retrieveFromSessionStorage(key) {
+        const value = sessionStorage.getItem(key);
+        return value;
+      }
+
+      function demoSessionStorage() {
+        const key = "mySessionKey";
+        const valueToSave = "Hello, sessionStorage!";
+
+        saveToSessionStorage(key, valueToSave);
+
+        const retrievedValue = retrieveFromSessionStorage(key);
+
+        console.log(`Retrieved value from sessionStorage: '${retrievedValue}'`);
+      }
+
+      window.onload = demoSessionStorage;
+    </script>
+  </head>
+  <body>
+    <h1>Check the console for sessionStorage operations</h1>
+  </body>
+</html>

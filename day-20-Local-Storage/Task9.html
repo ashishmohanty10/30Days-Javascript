@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storage Example</title>
+  </head>
+  <body>
+    <h1>Storage Example</h1>
+    <input type="text" id="keyInput" placeholder="Enter key" />
+    <input type="text" id="valueInput" placeholder="Enter value" />
+    <button onclick="saveToBothStorages()">Save to Both Storages</button>
+    <button onclick="logStorageValues()">Log Storage Values</button>
+
+    <script>
+      function saveToBothStorages() {
+        const key = document.getElementById("keyInput").value;
+        const value = document.getElementById("valueInput").value;
+
+        if (key && value) {
+          localStorage.setItem(key, value);
+          sessionStorage.setItem(key, value);
+          console.log(
+            `Saved ${value} to both localStorage and sessionStorage with key ${key}`
+          );
+        } else {
+          console.log("Please enter both key and value");
+        }
+      }
+
+      function logStorageValues() {
+        const key = document.getElementById("keyInput").value;
+
+        if (key) {
+          const localStorageValue = localStorage.getItem(key);
+          const sessionStorageValue = sessionStorage.getItem(key);
+
+          console.log(
+            `Value in localStorage for key "${key}": ${localStorageValue}`
+          );
+          console.log(
+            `Value in sessionStorage for key "${key}": ${sessionStorageValue}`
+          );
+        } else {
+          console.log("Please enter a key");
+        }
+      }
+    </script>
+  </body>
+</html>

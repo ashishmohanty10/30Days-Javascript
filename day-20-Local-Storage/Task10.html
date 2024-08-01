@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storage Example</title>
+  </head>
+  <body>
+    <h1>Storage Example</h1>
+    <button onclick="clearBothStorages()">Clear Both Storages</button>
+    <button onclick="verifyStoragesAreEmpty()">
+      Verify Storages Are Empty
+    </button>
+
+    <script>
+      function clearBothStorages() {
+        localStorage.clear();
+        sessionStorage.clear();
+        console.log("Both localStorage and sessionStorage have been cleared.");
+      }
+
+      function verifyStoragesAreEmpty() {
+        if (localStorage.length === 0 && sessionStorage.length === 0) {
+          console.log("Both localStorage and sessionStorage are empty.");
+        } else {
+          console.log("One or both storages are not empty.");
+
+          console.log("LocalStorage Content:");
+          for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
+            console.log(`${key}: ${localStorage.getItem(key)}`);
+          }
+
+          console.log("SessionStorage Content:");
+          for (let i = 0; i < sessionStorage.length; i++) {
+            let key = sessionStorage.key(i);
+            console.log(`${key}: ${sessionStorage.getItem(key)}`);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

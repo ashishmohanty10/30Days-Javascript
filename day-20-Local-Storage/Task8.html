@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SessionStorage Example</title>
+  </head>
+  <body>
+    <h1>SessionStorage Example</h1>
+    <button onclick="addItemToSessionStorage()">Add Item</button>
+    <button onclick="removeItemFromSessionStorage()">Remove Item</button>
+    <button onclick="logSessionStorage()">Log SessionStorage</button>
+
+    <script>
+      function logSessionStorage() {
+        console.log("Session Storage Content:");
+        for (let i = 0; i < sessionStorage.length; i++) {
+          let key = sessionStorage.key(i);
+          console.log(`${key}: ${sessionStorage.getItem(key)}`);
+        }
+      }
+
+      function removeFromSessionStorage(itemKey) {
+        console.log("Before removal:");
+        logSessionStorage();
+
+        sessionStorage.removeItem(itemKey);
+
+        console.log("After removal:");
+        logSessionStorage();
+      }
+
+      function addItemToSessionStorage() {
+        sessionStorage.setItem("exampleKey", "exampleValue");
+        console.log("Item added to sessionStorage");
+      }
+
+      function removeItemFromSessionStorage() {
+        removeFromSessionStorage("exampleKey");
+      }
+    </script>
+  </body>
+</html>

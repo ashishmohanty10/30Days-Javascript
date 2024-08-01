@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sessionStorage Object Example</title>
+    <script>
+      function saveObjectToSessionStorage(key, obj) {
+        const jsonString = JSON.stringify(obj);
+        sessionStorage.setItem(key, jsonString);
+        console.log(`Saved object to sessionStorage with key '${key}':`, obj);
+      }
+
+      function retrieveObjectFromSessionStorage(key) {
+        const jsonString = sessionStorage.getItem(key);
+        if (jsonString) {
+          const obj = JSON.parse(jsonString);
+          return obj;
+        }
+        return null;
+      }
+
+      function demoSessionStorage() {
+        const key = "mySessionObjectKey";
+        const objectToSave = {
+          name: "Jane Doe",
+          age: 25,
+          email: "jane.doe@example.com",
+        };
+
+        saveObjectToSessionStorage(key, objectToSave);
+
+        const retrievedObject = retrieveObjectFromSessionStorage(key);
+
+        console.log("Retrieved object from sessionStorage:", retrievedObject);
+      }
+
+      window.onload = demoSessionStorage;
+    </script>
+  </head>
+  <body>
+    <h1>Check the console for sessionStorage operations</h1>
+  </body>
+</html>

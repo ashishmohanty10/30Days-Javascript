@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2 localStorage</title>
+  </head>
+  <body>
+    <script>
+      const object = {
+        name: "sldjndls",
+        age: 233,
+        email: "me@gmail.com",
+      };
+      const key = "object";
+      localStorage.setItem(key, JSON.stringify(object));
+
+      let response = localStorage.getItem(key);
+      let data = JSON.parse(response);
+
+      console.log(data);
+    </script>
+  </body>
+</html>
