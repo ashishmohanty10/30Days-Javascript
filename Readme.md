@@ -22,3 +22,4 @@
 <b>Day 18</b>- was about Algorithm where we solved various tasks related to this topic <br/><br/>
 <b>Day 19</b>- was about Regex where we solved various tasks related to this topic <br/><br/>
 <b>Day 20</b>- was about Local Storage where we solved various tasks related to this topic <br/><br/>
+<b>Day 21</b>- was about LeetCode Easy where we solved various tasks related to this topic <br/><br/>
