@@ -1,4 +1,4 @@
-const apiKey = "d54b93f5e3e4fdc2a82260e66ca0f1a1";
+import { apiKey } from "./config";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather";
 
 document.getElementById("searchButton").addEventListener("click", () => {
